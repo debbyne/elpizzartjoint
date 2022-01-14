@@ -1,0 +1,23 @@
+body{
+    height: 850px;
+    background-image: url(images/pizza2.jpg);
+    background-repeat: no-repeat;
+    background-position:center center ;
+    background-size: cover;
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: xx-large;
+
+}
+.header{
+    text-align: center;
+    padding-top: 20px;
+}
+span{
+    color: rgb(236, 164, 30);
+}
+.overlay{
+    text-align: center;
+    padding-top: 100px;
+    background: rgb(0, 0, 0, .5);
+}
