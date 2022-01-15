@@ -1,39 +1,41 @@
-body{
-    height: 850px;
-    background-image: url(images/pizza2.jpg);
-    background-repeat: no-repeat;
-    background-position:center center ;
-    background-size: cover;
-    font-family: 'Lobster', cursive;
-    color: white;
-    font-size: xx-large;
-
+body {
+  height: 950px;
+  background-image: url(images/pizza2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: "Lobster", cursive;
+  color: white;
+  font-size: xx-large;
 }
-.header{
-    text-align: center;
-    padding-top: 20px;
+.header {
+  text-align: center;
+  padding-top: 20px;
 }
-span{
-    color: rgb(236, 164, 30);
+span {
+  color: rgb(236, 164, 30);
 }
-.overlay{
-    text-align: center;
-    padding-top: 100px;
-    background: rgb(0, 0, 0, .5);
+.overlay {
+  text-align: center;
+  padding-top: 100px;
+  background: rgb(0, 0, 0, 0.5);
 }
 .arrow {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 4px;
-  }
-  .down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-  }
-  .overlay1{
-    background: rgba(0, 0, 0, 0.5);
-padding-top: 100px;
-text-align: center;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
 }
-  
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.overlay1 {
+  background: rgba(0, 0, 0, 0.5);
+  padding-top: 100px;
+  text-align: center;
+}
+.col {
+  display: flex;
+  padding-left: 140px;
+}
