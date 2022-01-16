@@ -32,13 +32,39 @@ span {
 }
 .overlay1 {
   background: rgba(0, 0, 0, 0.5);
-  padding-top: 100px;
+  padding-top: 110px;
   text-align: center;
-  background-color: white;
-  opacity: 0.3;
-  color: black;
 }
 .col {
   display: flex;
   padding-left: 140px;
+}
+.col-md-2,
+.col-md-3,
+.col-md-5 {
+  background-color: white;
+  opacity: 0.3;
+  color: black;
+  padding-top: 25px;
+  border-radius: 15px;
+ 
+}
+.col-md-2 {
+  border: 1px solid black;
+  background-color: white;
+  opacity: 0.3;
+  width: 280px;
+  padding-right: 10px;
+}
+.col-md-3 {
+  border: 1px solid black;
+  background-color: white;
+  opacity: 0.3;
+  width: 280px;
+}
+.col-md-5 {
+  border: 1px solid black;
+  background-color: white;
+  opacity: 0.3;
+  width: 280px;
 }
