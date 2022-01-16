@@ -40,6 +40,7 @@
         </div>
         <div class="col">
           <div class="col-md-2">
+            <form action="#" id="form">
             <label>Select pizza size:</label><br />
             <input type="radio" name="size" value="600" />Small<br />
             <input type="radio" name="size" value="900" />Medium<br />
@@ -62,13 +63,17 @@
             chicken<br />
             <input type="radio" name="topping" value="130" />pineapple and
             beef<br />
+
           </div>
+
         </div>
+
         <label>Number of pizzas</label>
         <input type="number" name="number" />
-        <button type="button" class="btn btn-primary">Place order</button>
-        <button type="button" class="btn btn-secondary">Delivery</button>
+        <button id="placeOrder"  type="button" class="btn btn-primary">Place order</button>
+        <button   id="delivery" type="button" class="btn btn-secondary">Delivery</button>
       </div>
+    </form>
       <div class="overlay">
         <footer>
           Contact us on through the following socials <br />
