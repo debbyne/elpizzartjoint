@@ -46,25 +46,29 @@ span {
   opacity: 0.3;
   color: black;
   padding-top: 25px;
-  border-radius: 15px;
- 
+  border-radius: 25px;
 }
 .col-md-2 {
-  border: 1px solid black;
+  border: 1px solid rgb(129, 124, 124);
   background-color: white;
   opacity: 0.3;
-  width: 280px;
-  padding-right: 10px;
+  width: 290px;
+  margin-right: 10px;
 }
 .col-md-3 {
-  border: 1px solid black;
+  border: 1px solid rgb(129, 124, 124);
   background-color: white;
   opacity: 0.3;
-  width: 280px;
+  width: 290px;
+  margin-right: 10px;
 }
 .col-md-5 {
-  border: 1px solid black;
+  border: 1px solid rgb(129, 124, 124);
   background-color: white;
   opacity: 0.3;
-  width: 280px;
+  width: 290px;
+  margin-right: 10px;
+}
+footer{
+    background-color:orange;
 }
