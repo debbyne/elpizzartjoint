@@ -12,7 +12,7 @@ var toppings = newPizza ("bacon and bacon","pepperoni","Extra cheese","onions an
 var quantity = newPizza ()
 var price = newPizza ()
 
-$(document).ready(function(){
+$(document).ready(function(e){
    $ ("#placeOrder").click(function(){
     pizzaSize= parseInt($("form input[name='size']:checked").val());
     pizzaCrust = parseInt($("form input[name='crust']:checked").val());
@@ -21,5 +21,6 @@ $(document).ready(function(){
     pizzaPrice = (pizzaSize + pizzaCrust +  pizzaToppings) *pizzaQuantity ;
     alert ("The totalPrice for your order" +"Ksh" + pizzaPrice);
     totalCharge = (pizzaPrice);
+    e.preventDefault();
    })
 })
