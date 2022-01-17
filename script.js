@@ -20,5 +20,6 @@ $(document).ready(function(){
     pizzaQuantity= parseInt($("form input[name='quantity']").val());
     pizzaPrice = (pizzaSize + pizzaCrust +  pizzaToppings) *pizzaQuantity ;
     alert ("The totalPrice for your order" +"Ksh" + pizzaPrice);
+    totalCharge = (pizzaPrice);
    })
 })
