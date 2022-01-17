@@ -22,5 +22,15 @@ $(document).ready(function(e){
     alert ("The totalPrice for your order" +"Ksh" + pizzaPrice);
     totalCharge = (pizzaPrice);
     e.preventDefault();
+   });
+
+   $("#delivery").click(function(e){
+       alert("The dekivery charge will be ksh 300")
+       e.preventDefault();
    })
+
+
+
+
+
 })
