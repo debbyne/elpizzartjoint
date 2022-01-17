@@ -6,16 +6,15 @@ function orderPizza(size, crust, toppings, quantity, totalPrice) {
   this.totalPrice = totalPrice;
 }
 
-var size = newPizza("small", "medium", "large");
-var crust = newPizza("Crispy", "Stuffed", "Glutten free", "Thin", "Thick");
-var toppings = newPizza(
+var size = newOrder("small", "medium", "large");
+var crust = newOrder("Crispy", "Stuffed", "Glutten free", "Thin", "Thick");
+var toppings = newOrder(
   "bacon and bacon",
   "pepperoni",
   "Extra cheese",
-  "onions and bbq chicken"
-);
-var quantity = newPizza(quantity);
-var price = newPizza(totalPrice);
+  "onions and bbq chicken");
+var quantity = newOrder("quantity");
+var price = newOrder("totalPrice");
 
 $(document).ready(function () {
   $("#placeOrder").click(function (e) {
@@ -26,11 +25,16 @@ $(document).ready(function () {
     pizzaPrice = (pizzaSize + pizzaCrust + pizzaToppings) * pizzaQuantity;
     alert("The totalPrice for your order" + "Ksh" + pizzaPrice);
     totalCharge = pizzaPrice;
-    e.preventDefault();
-  });
+    console.log(totalPrice);
+
+    const form=document.querySelector(".form")
+    form.addEventListener("placeOrder",function(e){
+        e.preventDefault();
+        totalPrice();
+  
 
   $("#delivery").click(function (e) {
     alert("The delivery charge will be" + "ksh 300");
     e.preventDefault();
   });
-});
+})
