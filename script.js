@@ -6,11 +6,11 @@ function orderPizza(size,crust,toppings,quantity,totalPrice){
     this.totalPrice = totalPrice;
 }
 
-var pizzaSize
-var pizzaCrust
-var pizzaToppings
-var pizzaQuantity
-var totalPrice
+var size =  newPizza ("small","medium","large")
+var crust =  newPizza ("Crispy","Stuffed","Glutten free","Thin","Thick")
+var toppings = newPizza ("bacon and bacon","pepperoni","Extra cheese","onions and bbq chicken")
+var quantity = newPizza ()
+var price = newPizza ()
 
 $(document).ready(function(){
    $ ("#placeOrder").click(function(){
@@ -18,5 +18,7 @@ $(document).ready(function(){
     pizzaCrust = parseInt($("form input[name='crust']:checked").val());
     pizzaToppings = parseInt($("form input[name='toppings']:checked").val());
     pizzaQuantity= parseInt($("form input[name='quantity']").val());
+    pizzaPrice = (pizzaSize + pizzaCrust +  pizzaToppings) *pizzaQuantity ;
+    alert ("The totalPrice for your order" +"Ksh" + pizzaPrice);
    })
 })
