@@ -1,5 +1,5 @@
 body {
-  height: 1140px;
+  height: 1280px;
   background-image: url(images/pizza2.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -35,8 +35,9 @@ span {
   background: rgba(0, 0, 0, 0.5);
   padding-top: 110px;
   text-align: center;
+ 
 }
-.col {
+.row{
   display: flex;
   padding-left: 140px;
 }
@@ -54,21 +55,21 @@ span {
   border: 1px solid rgb(129, 124, 124);
   background-color: white;
   opacity: 0.3;
-  width: 290px;
+  width: 350px;
   margin-right: 10px;
 }
 .col-md-3 {
   border: 1px solid rgb(129, 124, 124);
   background-color: white;
   opacity: 0.3;
-  width: 290px;
+  width: 350px;
   margin-right: 10px;
 }
 .col-md-5 {
   border: 1px solid rgb(129, 124, 124);
   background-color: white;
   opacity: 0.3;
-  width: 290px;
+  width: 350px;
   margin-right: 10px;
 }
 footer{
@@ -77,5 +78,8 @@ footer{
 .btns{
   padding-top: 40px;
   padding-left: 110px;
+}
+form{
+  display: flex;
 }
 
