@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +21,7 @@
     />
     <title>PIZZA JOINT</title>
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -48,28 +50,27 @@
           </div>
           <div  id="crust" class="col-md-3">
             <label>Select crust type:</label><br />
-            <input type="radio" name="size" value="crispy" />Crispy for ksh 100<br />
-            <input type="radio" name="size" value="stuffed" />Stuffed for ksh 100<br />
-            <input type="radio" name="size" value="glutten-free" />Glutten free for ksh 100<br />
-            <input type="radio" name="size" value="thin" />Thin for ksh 100<br />
-            <input type="radio" name="size" value="thick" />Thick for ksh 100<br />
+            <input type="radio" name="crust" value="crispy" />Crispy for ksh 100<br />
+            <input type="radio" name="crust" value="stuffed" />Stuffed for ksh 100<br />
+            <input type="radio" name="crust" value="glutten-free" />Glutten free for ksh 100<br />
+            <input type="radio" name="crust" value="thin" />Thin for ksh 100<br />
+            <input type="radio" name="crust" value="thick" />Thick for ksh 100<br />
           </div>
           <div  id="toppings" class="col-md-5">
             <label class="toppings">Select toppings:</label> <br />
-            <input type="radio" name="topping" value="bacon" />bacon for ksh 100 <br />
-            <input type="radio" name="topping" value="pepperoni " />pepperoni  for ksh 250<br />
-            <input type="radio" name="topping" value="extra-cheese" />Extra cheese for ksh 200<br />
-            <input type="radio" name="topping" value="onions-and-bbq-chicken" />onions and bbq chicken for ksh 150<br />
-            <input type="radio" name="topping" value="pineapple-and-beef" />pineapple and beef for ksh 200<br />
+            <input type="radio" name="toppings" value="bacon" />bacon for ksh 100 <br />
+            <input type="radio" name="toppings" value="pepperoni " />pepperoni  for ksh 200<br />
+            <input type="radio" name="toppings" value="extra-cheese" />Extra cheese for ksh 200<br />
+            <input type="radio" name="toppings" value="onions-and-bbq-chicken" />onions and bbq chicken for ksh 100<br />
+            <input type="radio" name="toppings" value="pineapple-and-beef" />pineapple and beef for ksh 200<br />
 
           </div>
 
         </div>
 <div class="btns">
-        <label>Quantity</label>
-        <input type="number" name="Quantity" />
-        <button id="placeOrder"  type="button" class="btn btn-primary">Place order</button>
-        <button   id="delivery" type="button" class="btn btn-secondary">Delivery</button>
+        
+        <button id="placeOrder"  type="button" onclick="pizzaCharge()" class="btn btn-primary">Place order</button>
+        <button   id="delivery" type="button"    onclick="delivery()" class="btn btn-secondary">Delivery</button>
       </div>
       </div>
 
