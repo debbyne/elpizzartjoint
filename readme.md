@@ -7,7 +7,7 @@ This is the website of a pizza restaurant where you can order pizza and have it 
 # Setup
  You get access  it at https://github.com/debbyne/elpizzartjoint/
 # Demo
-[Live DEmo]()
+[Live DEmo](https://debbyne.github.io/elpizzartjoint/)
 
 # Technologies Used
 HTML
